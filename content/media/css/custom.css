@@ -1,0 +1,25 @@
+
+ul.socialize li
+{
+    font-size: 24px;
+    display: inline;
+    
+}
+.imageborderd
+{
+    border-width: 2px;
+    
+}
+.welcome {
+    color:blue;
+    font-size: 80px;
+    text-shadow: 1px 1px 1px #ccc;
+
+}
+body { 
+       background: url(../images/polaroid.png) repeat 0 0;
+    }
+    
+.sf {
+    
+}

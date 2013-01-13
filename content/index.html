@@ -1,0 +1,51 @@
+---
+title: my home on the web
+description: blog website under works
+
+---
+
+{% extends "columns.j2" %}
+
+{% block main %}
+<div class="welcome" style="max-width:100%">
+    <h1><strong class="welcome">....</strong></h1>
+    <!--<img  class=sf" src="{{media_url('images/sf.jpg')}}"> -->
+</div>
+{% markdown %}
+
+{% endmarkdown %}
+{% endblock main %}
+
+
+{% block sidebar %}
+<h3>About me</h3>
+<p/>
+<a href="{{media_url('images/self.jpg')}}" rel="self" title="">
+    <img src="{{ media_url('images/self.jpg')}}" class=imageborder alt="Anupam Aggarwal"/>
+</a>
+<p/>
+<p> another average guy</p>
+<p>You can find me here</p>
+<p/> <p/>
+<ul class="socialize"> 
+    <li>
+    <a href="mailto:anupam.aggarwal@gmail.com" ><i class="icon-envelope-alt"></i></a>
+    </li>
+    <li>
+    <a href="http://facebook.com/anupam.aggarwal" ><i class="icon-facebook" ></i></a>
+    </li>
+    <li>
+    <a href="http://www.linkedin.com/profile/view?id=40551358&trk=tab_pro" ><i class="icon-linkedin"></i></a>
+    </li>
+    <li>
+    <a href="http://www.github.com/anupamaggarwal"><i class="icon-github"></i></a>
+    </li>
+    <li>
+    <a href="http://flickr.com/anupamaggarwal" ><i class="icon-camera" ></i></a>
+    </li>
+
+</ul>
+{% block css %}
+
+{% endblock css %}
+{% endblock sidebar %}

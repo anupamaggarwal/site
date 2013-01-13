@@ -1,0 +1,35 @@
+---
+title: my home on the web
+description: blog website under works
+---
+
+{% extends "columns.j2" %}
+
+{% block main %}
+## main content
+Under construction
+{% endblock main %}
+
+
+{% block sidebar %}
+<h3>About me</h3>
+<p>Just another  average guy making his way throguh the world</p>
+<p>i am nobody yet i am everybody.</p>
+
+<ul class="socialize">
+    <li>
+    <i class="icon-twitter"></i> 
+    </li>
+    <li>
+    <i class="icon-facebook" ></i> 
+    </li><li>
+    <i class="icon-linkedin" ></i> 
+    </li>
+    <li>
+    <i class="icon-github" ></i> 
+    </li>
+</ul>
+{% block css %}
+
+{% endblock css %}
+{% endblock sidebar %}
