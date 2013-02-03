@@ -1,18 +1,9 @@
 ---
-title: Coredump
-extends: blog.j2
+extends: listing_paging.j2 
+title: Coredump 
+paginator:
+    sorter: time
+    size: 10
+    file_pattern: pages/$PAGE/$FILE$EXT
+listable: false
 ---
-
-
-{% from "macros.j2" import render_excerpt with context  %}
-{% block main %}
-{% block page_title %}<h1 class="title">{{ resource.meta.title }}</h1>{% endblock page_title %}
-
-<ul class="listing clear">
-    {% for res in resource.node.walk_resources_sorted_by_time() %}
-    <li>
-    {{ render_excerpt(res) }}
-    </li>
-    {% endfor %}
-</ul>
-{% endblock main%}
