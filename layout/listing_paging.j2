@@ -7,7 +7,7 @@
 {% for res in resource.node.walk_resources_sorted_by_time() %}
     {{ render_post_listing(res) }}
 {% if not res == resource.node.walk_resources_sorted_by_time()[-1] %}
-<p style="padding-bottom: 4px; border-bottom: 2px dotted #bbb;"></p>
+<p style="padding-bottom: 4px; color:#404040;border-bottom: 2px dotted #bbb;"></p>
 {% endif %}
 {% endfor %}
 
