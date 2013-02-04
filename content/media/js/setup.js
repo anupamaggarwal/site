@@ -7,8 +7,16 @@ $(document).ready(function(){
 		},
 		itemTemplate: '<li><a href="{{image_b}}"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
 	});
-	
-	$('#cbox').jflickrfeed({
+   
+    $('#rfeed').rssfeed('http://www.reddit.com/r/programming/.rss', {
+            limit: 5 
+              });
+     $('#ycomfeed').rssfeed('http://news.ycombinator.com/rss', {
+            limit: 5
+              });
+
+
+    $('#cbox').jflickrfeed({
 		limit: 14,
 		qstrings: {
 			id: '46737096@N05'

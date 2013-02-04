@@ -1400,10 +1400,10 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
 .topbar-inner, .topbar .fill {
-  background-color: #222;
-  background-color: #222222;
+  background-color: #7c31d0;
+  background-color: #7c31d0;
   background-repeat: repeat-x;
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#333333), to(#222222));
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#333333), to(#7c31d0));
   background-image: -moz-linear-gradient(top, #333333, #222222);
   background-image: -ms-linear-gradient(top, #333333, #222222);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333333), color-stop(100%, #222222));
@@ -1438,7 +1438,7 @@ table .headerSortUp.purple, table .headerSortDown.purple {
   text-decoration: none;
 }
 .topbar div > ul .active > a, .nav .active > a {
-  background-color: #222;
+  background-color: #7c31d0;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .topbar div > ul.secondary-nav, .nav.secondary-nav {
