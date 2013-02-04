@@ -17,9 +17,21 @@ ul.socialize li
 
 }
 body { 
-       background: url(../images/polaroid.png) repeat 0 0;
+       background: url(../images/polaroid.png) repeat ;
     }
     
 .sf {
     
+}
+.thumbs {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.thumbs li {
+    background: none repeat scroll 0 0 #EEEEEE;
+    float: left;
+    list-style: none outside none;
+    margin: 5px;
+    padding: 3px;
 }
