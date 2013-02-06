@@ -1,0 +1,10 @@
+---
+extends: false
+listable: true
+
+---
+
+{% set tag = site.tagger.tags['frontend'] %}
+{% set source = site.content.node_from_relative_path('blog') %}
+{% set walker = source.walk_resources_tagged_with_frontend %}
+{% extends "tagged_posts.j2" %}

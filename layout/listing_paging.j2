@@ -29,13 +29,8 @@
 
 
 
+
 {% block sidebar %}
-{% if resource.meta.tags %}
-<div class="tags">
-Tags:
-{% for tag in resource.meta.tags %}
-<a href="{{ content_url('blog/tags/'~tag~'.html') }}" rel="tag">{{ tag }}</a>
-{% endfor %}
-</div>
-{% endif %}
+{% from "macros.j2" import render_tagbar with context %}
+{{ render_tagbar() }}
 {% endblock sidebar%}

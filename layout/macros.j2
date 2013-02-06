@@ -76,3 +76,16 @@ var addthis_config =
 {%- endmacro %}
 
 
+{% macro render_tagbar() %}
+<h3>Tags</h3>
+<p/>
+<div class = "tagcloud">
+  {% for tagname, tag in site.tagger.tags -%}
+  <span style="font-size: 15px;">
+  <a href = "/blog/tags/{{ tagname }}.html">{{ tagname }}</a>
+  </span>
+  {%- endfor %}
+</div>
+
+{% endmacro %}
+

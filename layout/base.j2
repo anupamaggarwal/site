@@ -23,8 +23,7 @@
 
     {% block favicons %}
     {# Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references #}
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ media_url('img/appleimgim-touch-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ media_url('img/apple-touch-icon-114x114.png') }}">
+    <link rel="shortcut icon" sizes="72x72" href="{{ media_url('images/favicon.ico') }}">
     {% endblock favicons %}
     
     {% block headjs %}
@@ -70,6 +69,7 @@
      <script src="{{ media_url('js/jflickrfeed.min.js') }}"></script>
      <script src="{{ media_url('js/jquery.zrssfeed.min.js') }}"></script>
      <script src="{{ media_url('js/setup.js') }}"></script>
+    
     {% endblock jquery %}
 
     {% block bootstrap_scripts %}

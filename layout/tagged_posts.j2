@@ -1,15 +1,13 @@
-{% extends "columns.j2" %}
+{% extends "base.j2" %}
 {% from "macros.j2" import render_post_listing%}
 {% block main %}
 <div class="archives">
-<h1 class="tagtitle">Posts Tagged: {{ tag.name }}</h1>
+<h1 class="tag title">Posts Tagged: {{ tag.name }}</h1>
 <ul class="posts">
 {% for res in walker() -%}
 <li class="post">
     {{ render_post_listing(res) }}
 </li>
-{# is there a better way to figure out which is last without rending the
-   calling the nodes again? #}
 {% if not res == walker()[-1] %}
 <p style="padding-bottom: 4px; border-bottom: 2px dotted #bbb;"></p>
 {% endif %}

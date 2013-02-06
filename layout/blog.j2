@@ -26,3 +26,9 @@
 {%- endblock %}
 
 
+{% block sidebar %}
+{% from "macros.j2" import render_tagbar with context %}
+{{ render_tagbar() }}
+{% endblock %}
+
+

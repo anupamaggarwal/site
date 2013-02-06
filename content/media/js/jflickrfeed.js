@@ -10,7 +10,7 @@
 	$.fn.jflickrfeed = function(settings, callback) {
 		settings = $.extend(true, {
 			flickrbase: 'http://api.flickr.com/services/feeds/',
-			feedapi: 'photos_public.gne',
+			feedapi: 'activity.gne',
 			limit: 20,
 			qstrings: {
 				lang: 'en-us',
