@@ -40,7 +40,7 @@ tagger:
             template: tagged_posts.j2
             archive_extension: html
             meta:
-                listable: true 
+                listable: false 
 paginator:
     sorter: time
     size: 10
