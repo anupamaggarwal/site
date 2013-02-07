@@ -12,22 +12,20 @@
 {% endfor %}
 
 </div>
-<div class="pagenavi">
+<div class="pagenavi" style="margin:20px">
 {% if resource.page.next %}
-<p class="naviolder"><a href="{{ content_url(resource.page.next.resource.url) }}">&laquo; Older posts</a></p>
+<p class="naviolder" style="float:left" ><a href="{{ content_url(resource.page.next.resource.url) }}">&laquo; Older posts</a></p>
 {% else %}
-<p class="naviolder" id="faded">&laquo;&laquo; Older posts</p>
+<p class="naviolder"  style="float:left" id="faded">&laquo;&laquo; Older posts</p>
 {% endif %}
 
 {% if resource.page.previous %}
-<p class="navinewer"><a href="{{ content_url(resource.page.previous.resource.url) }}">Newer posts &raquo;</a></p>
+<p class="navinewer" style="float:right" ><a href="{{ content_url(resource.page.previous.resource.url) }}">Newer posts &raquo;</a></p>
 {% else %}
-<p class="navinewer" id="faded">Newer posts &raquo;&raquo;</p>
+<p class="navinewer" style="float:right" id="faded">Newer posts &raquo;&raquo;</p>
 {% endif %}
 </div>
 {% endblock %}
-
-
 
 
 {% block sidebar %}

@@ -67,9 +67,17 @@ var addthis_config =
 
 {% macro render_post_listing(res, class=None) -%}
 <div class = "postlisting">
-   <h3><a href="{{(res.url)}}">{{ res.meta.title }}</a><br /></h3>
-    <span style="font-size: small; padding-left: 2px"><i>
-    Posted on</i> {{ res.meta.created.strftime('%B %d, %Y') }}<br />
+<h3><a href="/{{(res.url)}}">{{ res.meta.title }}</a><br /></h3>
+<span style="font-size: small; padding-left: 2px"><i>
+Posted on</i> {{ res.meta.created.strftime('%B %d, %Y') }}<br />
+
+{% if res.meta.tags %}
+Tags:
+{% for tag in res.meta.tags %}
+<span style="color: grey">{{ tag }}</span> 
+{% endfor %}
+
+{% endif %}
 </span>
 <p id="postdesc" style="background-color:#E6EBEA;">{{res.meta.description}}</p>
 </div> 
@@ -81,7 +89,7 @@ var addthis_config =
 <p/>
 <div class = "tagcloud">
   {% for tagname, tag in site.tagger.tags -%}
-  <span style="font-size: 15px;">
+  <span style="font-size: 12px;">
   <a href = "/blog/tags/{{ tagname }}.html">{{ tagname }}</a>
   </span>
   {%- endfor %}
