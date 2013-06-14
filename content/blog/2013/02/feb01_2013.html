@@ -18,4 +18,17 @@ Some folks also suggest
 [Real World Haskell](http://book.realworldhaskell.org/read/)
 
 Both of them would cost you exactly 0 dollars so buy a copy today!
+
+---
+
+Here's a quicksort implementation in 5 lines haskell
+ {% filter syntax('bash') -%}
+quicksort :: (Ord a) => [a]->[a]
+quicksort [] = []
+quicksort (x:xs) =
+        let  less = quicksort [ a | a <-xs , a <=x]
+        more = quicksort [ a | a <-xs , a>x]
+        in less ++ [x] ++ more 
+{%- endfilter %}
+[WebServer](http://news.ycombinator.com/item?id=3488911)
 {%- endmark %}
