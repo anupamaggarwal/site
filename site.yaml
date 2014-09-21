@@ -54,7 +54,7 @@ context:
         site_title: Anupam Aggarwal 
         author:
             name: Anupam Aggarwal 
-            url: "http://anupamaggarwal.com"
+            url: "http://anupamaggarwal.github.io"
         google_analytics_id: UA-37436845-1 
         home_url: index.html
         menu:
@@ -62,5 +62,3 @@ context:
               url: index.html 
             - title: Wiki/Posts 
               url: blog
-            - title: Interesting Feeds 
-              url: feeds 
