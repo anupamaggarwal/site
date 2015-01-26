@@ -1,0 +1,28 @@
+---
+layout: default
+---
+    <div class="articles-bucket">
+        {% for post in paginator.posts %}
+        {% if forloop.index == 2 %}
+        <div class="clear"></div>
+        {% endif %}
+        <article>
+            <h3 style="color:black"><a  style="color:#333!important;" href="{{ post.url }}">{{ post.title }}</a></h3>
+            <span> {{ post.category }}</span>
+            <p style="font-family:ff-tisa-web-pro,Georgia,Cambria,Times New Roman,Times,serif;font-weight: 300; font-size:15px;font-weight:normal; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;
+            background:#fff; ">{{ post.content | strip_html | truncatewords: 75 }}</p>
+        </article>
+        {% endfor %}
+    </div>
+
+    <div class="post-pagination">
+        {% if paginator.next_page %}
+        <a class="post-previous" href="/page{{ paginator.next_page }}">Older</a>
+        {% endif %}
+        {% if paginator.previous_page == 1 %}
+        <a class="post-next" href="/">Newer</a>
+        {% elsif paginator.previous_page %}
+        <a class="post-next" href="/page{{ paginator.previous_page }}">Newer</a>
+        {% endif %}
+    </div>
+

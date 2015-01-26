@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% if page.post_cover %}
+<div class="post-cover-fullwidth">
+    <div class="post-cover-maxheight">
+        <img class="post-cover" src="{{ page.post_cover }}">
+    </div>
+</div>
+{% endif %}
+
+<section class="post-container">
+    <div >
+        <div >
+        <time class="post_coverrofile_snippetst-date">Published {{ page.date | date: "%b %d, %Y" }}</time>
+    </div>
+</div>              <!-- post-author-card -->
+
+{% if page.post_image %}
+<img class="post-image" src="{{ page.post_image }}">
+{% endif %}
+
+<div class="post-body">
+    <p class="post-category tk-freight-sans-pro">{{ page.category }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-content">{{ content }}</div>
+    <div class="clear"></div>
+    <div class="post-pagination">
+        {% if page.previous.url %}<a class="post-previous" href="{{page.previous.url}}">Previous</a>{% endif %}
+        {% if page.next.url %}<a class="post-next" href="{{page.next.url}}">Next</a>{% endif %}
+    </div>
+</div> <!-- post-body -->
+                                                                                    </section>

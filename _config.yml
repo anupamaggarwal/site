@@ -1,0 +1,7 @@
+safe: true
+auto: true
+permalink: /:title
+auto: false
+paginate: 25
+
+
